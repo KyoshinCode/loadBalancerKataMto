@@ -19,4 +19,8 @@ public class ServerBuilder implements Builder<Server>{
     public static ServerBuilder server() {
         return new ServerBuilder();
     }
+
+    public ServerBuilder withCurrentLoadOf(double initialLoad) {
+        return this;
+    }
 }
